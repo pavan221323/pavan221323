@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<% int a=(int)request.getAttribute("a"); %>
+<% int b=(int)request.getAttribute("b"); %>
+
+<%int c=a+b;%>
+<%= c %>
+
+<%int d=a-b; %>
+<%=d %>
+	
+<form action="clac.html" method="post"  >
+a<input type="number" name="a"><br>
+b<input type="number" name="b"><br>
+<br>
+
+
+
+add<input type="submit">
+sub<input type="submit">
+
+      
+
+
+
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  <servlet-class>myproject.servlet1</servlet-class>
+  <servlet-name>s1</servlet-name>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/home</url-pattern>
+  <servlet-name>s1</servlet-name>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>myproject.servlet2</servlet-class>
+  <servlet-name>s2</servlet-name>
+  
+  
+  </servlet>
+  <servlet-mapping>
+  <url-pattern>/logout</url-pattern>
+  <servlet-name>s2</servlet-name>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>myproject.servlet3</servlet-class>
+  <servlet-name>s3</servlet-name>
+  
+  </servlet>
+  <servlet-mapping>
+  <url-pattern>/sign</url-pattern>
+  <servlet-name>s3</servlet-name>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>myproject.formproject</servlet-class>
+  <servlet-name>param</servlet-name>
+  
+  </servlet>
+  <servlet-mapping>
+  <url-pattern>/login</url-pattern>
+  <servlet-name>param</servlet-name>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>myproject.myform</servlet-class>
+  <servlet-name>foram</servlet-name>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/submit</url-pattern>
+  <servlet-name>foram</servlet-name>
+  
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-class>myproject.servlet1reqdispatch</servlet-class>
+  <servlet-name>re</servlet-name>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/hi</url-pattern>
+  <servlet-name>re</servlet-name>
+  </servlet-mapping>
+  
+  
+ 
+  <servlet>
+  <servlet-class>myproject.servlet2reqdispatch</servlet-class>
+  <servlet-name>ree</servlet-name>
+  </servlet>
+ 
+  
+  <servlet-mapping>
+  <url-pattern>/bye</url-pattern>
+  <servlet-name>ree</servlet-name>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-class>myproject.gettingdatafromxml1</servlet-class>
+  <servlet-name>p1</servlet-name>
+  <init-param>
+  <param-name>password</param-name>
+  <param-value>root</param-value>
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/s1</url-pattern>
+  <servlet-name>p1</servlet-name>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-class>myproject.gettingdatafromxml2</servlet-class>
+  <servlet-name>p2</servlet-name>
+  <init-param>
+  <param-name>db</param-name>
+  <param-value>employee</param-value>
+  </init-param>
+  </servlet>
+  
+   <servlet-mapping>
+  <url-pattern>/s2</url-pattern>
+  <servlet-name>p2</servlet-name>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-class>myproject.contextaccess1</servlet-class>
+  <servlet-name>k1</servlet-name>
+  
+  </servlet>
+  <servlet-mapping>
+  <url-pattern>/life</url-pattern>
+  <servlet-name>k1</servlet-name>
+  
+  </servlet-mapping>
+  
+  
+  
+  
+  <context-param>
+  <param-name>name</param-name>
+  <param-value>pavan1</param-value>
+  
+  </context-param>
+  
+  <servlet>
+  <servlet-class>myproject.myclass</servlet-class>
+  <servlet-name>k1</servlet-name>
+  </servlet>
+  <servlet-mapping>
+  <url-pattern>/gopi</url-pattern>
+  <servlet-name>k1</servlet-name>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-class>myproject.myclass2</servlet-class>
+  <servlet-name>k2</servlet-name>
+  </servlet>
+  <servlet-mapping>
+  <url-pattern>/gopi1</url-pattern>
+  <servlet-name>k2</servlet-name>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  <context-param>
+  <param-name>user</param-name>
+  <param-value>root</param-value>
+  
+  
+  </context-param>
+  
+  <context-param>
+  <param-name>password</param-name>
+  <param-value>root</param-value>
+  
+  
+  </context-param>
+  
+  
+  
+  
+  
+</web-app>
